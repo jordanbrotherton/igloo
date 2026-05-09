@@ -36,7 +36,7 @@ modules:
         install: # system flatpaks we want all users to have and not remove
           - org.mozilla.firefox
           - org.gnome.Loupe
-          - io.github.kolumni.Bazaar
+          - io.github.kolunmi.Bazaar
           - dev.qwery.AddWater
           - com.usebottles.bottles
           - org.gnome.Calculator

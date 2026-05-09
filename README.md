@@ -1,13 +1,17 @@
-# igloo &nbsp; [![bluebuild build badge](https://github.com/jordanbrotherton/igloo/actions/workflows/build.yml/badge.svg)](https://github.com/jordanbrotherton/igloo/actions/workflows/build.yml)
+![Igloo Logo](./files/system/usr/share/pixmaps/fedora_logo_med.png#gh-light-mode-only)
+![Igloo Logo](./files/system/usr/share/pixmaps/fedora_whitelogo_med.png#gh-dark-mode-only)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+[![bluebuild build badge](https://github.com/jordanbrotherton/igloo/actions/workflows/build.yml/badge.svg)](https://github.com/jordanbrotherton/igloo/actions/workflows/build.yml)
 
-After setup, it is recommended you update this README to describe your custom image.
+Igloo is a cozy 'blank canvas' desktop, with tools. This is currently moreso a personal image, but with an aim to make it general for anyone.
 
 ## Installation
 
 > [!WARNING]  
 > [This is an experimental feature](https://www.fedoraproject.org/wiki/Changes/OstreeNativeContainerStable), try at your own discretion.
+
+> [!NOTE]  
+> If you are on an Nvidia system, replace `igloo` with `igloo-nvidia` for preinstalled drivers.
 
 To rebase an existing atomic Fedora installation to the latest build:
 
@@ -27,8 +31,6 @@ To rebase an existing atomic Fedora installation to the latest build:
   ```
   systemctl reboot
   ```
-
-The `latest` tag will automatically point to the latest build. That build will still always use the Fedora version specified in `recipe.yml`, so you won't get accidentally updated to the next major version.
 
 ## ISO
 

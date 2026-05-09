@@ -37,7 +37,6 @@ modules:
           - org.mozilla.firefox
           - org.gnome.Loupe
           - io.github.kolunmi.Bazaar
-          - dev.qwery.AddWater
           - com.usebottles.bottles
           - org.gnome.Calculator
           - org.gnome.Calendar

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="90"
+   height="22"
+   viewBox="0 0 23.812499 5.8208335"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <g
+     id="layer1"
+     transform="matrix(0.05558035,0,0,0.05558035,4.3769652,-0.85422574)">
+    <g
+       id="g3"
+       transform="matrix(1.2230954,0,0,1.2230954,-15.110997,-31.803639)">
+      <g
+         id="g5"
+         transform="translate(-18.411107,-0.56855691)">
+        <g
+           id="g1"
+           style="stroke:#ffffff;stroke-opacity:1">
+          <path
+             style="fill:none;stroke:#ffffff;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             d="m 111.92323,116.27686 c 0,0 -10.46424,-59.266667 -44.189897,-59.266667 -33.725658,0 -44.189894,59.266667 -44.189894,59.266667 h 44.189894 z"
+             id="path1" />
+          <path
+             style="fill:#ffffff;fill-opacity:1;stroke:#ffffff;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             d="m 48.217978,116.27686 c 0,0 7.918536,-26.458334 19.515355,-26.458334 11.596819,0 19.515355,26.458334 19.515355,26.458334"
+             id="path2" />
+          <path
+             style="fill:none;stroke:#ffffff;stroke-width:5.29167;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+             d="M 40.657827,73.235803 V 46.485542 h 12.751094 v 14.513502"
+             id="path3" />
+        </g>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:65.8396px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans Bold';writing-mode:lr-tb;direction:ltr;fill:#ffffff;fill-opacity:1;stroke:none;stroke-width:13.7166;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:none;stroke-opacity:1"
+           x="121.51925"
+           y="106.17177"
+           id="text5"><tspan
+             id="tspan5"
+             style="font-style:normal;font-variant:normal;font-weight:500;font-stretch:normal;font-size:65.8396px;font-family:'Adwaita Sans';-inkscape-font-specification:'Adwaita Sans Medium';stroke:none;stroke-width:13.7166;fill:#ffffff;fill-opacity:1"
+             x="121.51925"
+             y="106.17177">Igloo</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

@@ -1,0 +1,88 @@
+modules:
+  - type: files
+    files:
+      - source: system
+        destination: /
+
+  - type: dnf
+    repos:
+      copr:
+        - atim/starship
+        - trixieua/morewaita-icon-theme
+    install:
+      packages:
+        - fuse-libs
+        - steam-devices
+        # Terminal
+        - fastfetch
+        - starship
+        # Thumbnailers
+        - icoutils
+        - f3d
+        - gnome-kra-ora-thumbnailer
+        # Themes
+        - adw-gtk3-theme
+        - morewaita-icon-theme
+    remove:
+      packages:
+        - firefox
+        - firefox-langpacks
+
+  - type: default-flatpaks
+    configurations:
+      - notify: true # Send notification after install/uninstall is finished (true/false)
+        scope: system
+        # If no repo information is specified, Flathub will be used by default
+        install: # system flatpaks we want all users to have and not remove
+          - org.mozilla.firefox
+          - org.gnome.Loupe
+          - io.github.kolumni.Bazaar
+          - dev.qwery.AddWater
+          - com.usebottles.bottles
+          - org.gnome.Calculator
+          - org.gnome.Calendar
+          - org.gnome.Snapshot
+          - org.gnome.Characters
+          - org.gnome.clocks
+          - org.gnome.Contacts
+          - org.gnome.baobab
+          - com.ranfdev.DistroShelf
+          - org.gnome.Papers
+          - io.missioncenter.MissionCenter
+          - io.github.flattool.Warehouse
+          - io.github.flattool.Ignition
+          - io.github.fabrialberio.pinapp
+          - com.mattjakeman.ExtensionManager
+          - com.github.tchx84.Flatseal
+          - it.mijorus.gearlever
+      - scope: user # Also add Flathub user repo, but no user packages
+
+  - type: signing # this sets up the proper policy & signing files for signed images to work fully
+
+  - type: script
+    snippets:
+      - "mkdir -p /etc/gtk-4.0 /etc/skel/.config/gtk-4.0"
+      - "curl -Lo /etc/gtk-4.0/gtk.css https://raw.githubusercontent.com/pakovm-git/Adwaita-Accent-Tint/refs/heads/main/gtk.css"
+      - "cp /etc/gtk-4.0/gtk.css /etc/skel/.config/gtk-4.0/gtk.css"
+
+      - "mkdir -p /etc/skel/.local/share/themes"
+      - "cp -r /usr/share/themes/adw-gtk3 /etc/skel/.local/share/themes/"
+      - "cp -r /usr/share/themes/adw-gtk3-dark /etc/skel/.local/share/themes/"
+
+      - "flatpak override --system --filesystem=xdg-config/gtk-4.0:ro"
+      - "flatpak override --system --filesystem=xdg-data/themes:ro"
+      - "flatpak override --system --env=GTK_THEME=adw-gtk3"
+  - type: script
+    snippets:
+      - "mkdir -p /usr/share/gnome-shell/extensions/bazaar-integration@kolunmi.github.io"
+      - "curl -L https://github.com/bazaar-org/bazaar-companion/archive/refs/heads/main.tar.gz | tar xz -C /tmp"
+      - "cp -r /tmp/bazaar-companion-main/src/* /usr/share/gnome-shell/extensions/bazaar-integration@kolunmi.github.io/"
+      - "rm -rf /tmp/bazaar-companion-main"
+  - type: gnome-extensions
+    install:
+      - 517
+      - 4269
+      - 6583
+      - 8906
+      - 9164
+      - 9339

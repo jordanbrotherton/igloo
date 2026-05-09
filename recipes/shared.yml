@@ -17,7 +17,7 @@ modules:
         - fastfetch
         - starship
         # Thumbnailers
-        - icoutils
+        - python3-icoextract
         - f3d
         - gnome-kra-ora-thumbnailer
         # Themes
@@ -78,6 +78,10 @@ modules:
       - "curl -L https://github.com/bazaar-org/bazaar-companion/archive/refs/heads/main.tar.gz | tar xz -C /tmp"
       - "cp -r /tmp/bazaar-companion-main/src/* /usr/share/gnome-shell/extensions/bazaar-integration@kolunmi.github.io/"
       - "rm -rf /tmp/bazaar-companion-main"
+  - type: script
+    snippets:
+      - "echo 'NoDisplay=true' >> /usr/share/applications/f3d.desktop"
+      - "echo 'NoDisplay=true' >> /usr/share/applications/opencascade-draw.desktop"
   - type: gnome-extensions
     install:
       - 517
@@ -86,3 +90,6 @@ modules:
       - 8906
       - 9164
       - 9339
+  - type: gschema-overrides
+    include:
+      - zz1-igloo.gschema.override

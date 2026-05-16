@@ -81,6 +81,18 @@ modules:
     snippets:
       - "echo 'NoDisplay=true' >> /usr/share/applications/f3d.desktop"
       - "echo 'NoDisplay=true' >> /usr/share/applications/opencascade-draw.desktop"
+  - type: script
+    snippets:
+      - "mkdir -p /usr/share/thumbnailers"
+      - |
+        cat << 'EOF' > /usr/share/thumbnailers/blender.thumbnailer
+        [Thumbnailer Entry]
+        TryExec=python3
+        Exec=python3 /usr/bin/blender-thumbnailer.py %i %o
+        MimeType=application/x-blender;
+        EOF
+      - "curl -Lo /usr/bin/blender-thumbnailer.py https://raw.githubusercontent.com/blender/blender/v2.83.20/release/bin/blender-thumbnailer.py"
+      - "chmod +x /usr/bin/blender-thumbnailer.py"
   - type: gnome-extensions
     install:
       - 517

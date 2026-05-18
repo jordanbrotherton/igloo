@@ -1,0 +1,31 @@
+<?xml version="1.0"?>
+<!DOCTYPE wallpapers SYSTEM "gnome-wp-list.dtd">
+<wallpapers>
+  <wallpaper deleted="false">
+    <name>Igloo Default Background (from Unsplash by Slava Auchynnikau)</name>
+    <filename>/usr/share/backgrounds/igloo/default.jpg</filename>
+    <filename-dark>/usr/share/backgrounds/igloo/default.jpg</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>Vibrant Leaf</name>
+    <filename>/usr/share/backgrounds/igloo/leaf.jpg</filename>
+    <filename-dark>/usr/share/backgrounds/igloo/leaf.jpg</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+  <wallpaper deleted="false">
+    <name>At the Dock</name>
+    <filename>/usr/share/backgrounds/igloo/dock.jpg</filename>
+    <filename-dark>/usr/share/backgrounds/igloo/dock.jpg</filename-dark>
+    <options>zoom</options>
+    <shade_type>solid</shade_type>
+    <pcolor>#3071AE</pcolor>
+    <scolor>#000000</scolor>
+  </wallpaper>
+</wallpapers>

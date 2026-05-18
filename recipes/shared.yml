@@ -88,7 +88,7 @@ modules:
         cat << 'EOF' > /usr/share/thumbnailers/blender.thumbnailer
         [Thumbnailer Entry]
         TryExec=python3
-        Exec=python3 /usr/bin/blender-thumbnailer.py %i %o
+        Exec=python3 /usr/bin/blender-thumbnailer.py %u %o
         MimeType=application/x-blender;
         EOF
       - "curl -Lo /usr/bin/blender-thumbnailer.py https://raw.githubusercontent.com/blender/blender/v2.83.20/release/bin/blender-thumbnailer.py"
